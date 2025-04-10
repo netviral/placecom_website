@@ -1,6 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<style>
+  .team-member {
+    width: 230px;
+    height: 320px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    padding: 1rem 0.5rem;
+    margin-right: 1rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .team-member:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  }
+
+  .team-member img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-bottom: 0.5rem;
+  }
+
+  .member-info h6 {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    line-height: 1.2;
+  }
+
+  .member-info span {
+    color: #cccccc;
+    font-size: 0.85rem;
+    line-height: 1.1;
+    margin-bottom: 0.2rem;
+    display: block;
+  }
+
+  .member-info p {
+    color: #dddddd;
+    font-size: 0.75rem;
+    line-height: 1.1;
+    word-break: break-word;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .team-member {
+      width: 200px;
+      height: 300px;
+    }
+
+    .team-member img {
+      width: 115px;
+      height: 115px;
+    }
+
+    .member-info h6 {
+      font-size: 0.95rem;
+    }
+
+    .member-info span,
+    .member-info p {
+      font-size: 0.72rem;
+    }
+  }
+
+  
+</style>
+
+<style>
+  .team-member {
+    overflow: hidden;
+  }
+
+  .member-info h6,
+  .member-info div {
+    white-space: normal !important;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .member-info {
+    width: 100%;
+    padding: 0 5px;
+  }
+</style>
+<!-- Placement Committee Members -->
+
+<style>
+  .team-member {
+    height: 345px !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: black;
+  }
+  .member-img {
+    flex: 0 0 55% !important;
+  }
+  .member-info {
+    flex: 0 0 45% !important;
+    color: black !important;
+  }
+  .member-info h6 {
+    color: black !important;
+    font-weight: bold;
+  }
+  .member-info .text-muted,
+  .member-info .small {
+    color: #333 !important;
+    font-size: 0.85rem;
+    word-wrap: break-word;
+  }
+</style>
+
+</style>
+
+</style>
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -41,7 +167,7 @@
   <header id="header" class="fixed-top">
     <div class="container-fluid d-flex justify-content-between align-items-center">
 
-      <h1 class="logo"><a href="index.html">Kelly</a></h1>
+      <h1 class="logo"><a href="index.html">PLACECOM</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -68,227 +194,401 @@
   </header><!-- End Header -->
 
   <main id="main">
+<!-- ======= Embedded CSS Styling ======= -->
+<style>
+  .section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .section-title p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  .card {
+    border: none;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    background-color: #fff;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  .card i {
+    font-size: 48px;
+  }
+  .member {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  .member:hover {
+    transform: translateY(-5px);
+  }
+  .member img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+</style>
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
+<!-- ======= About Us Section ======= -->
 
-        <div class="section-title">
-          <h2>About</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+<!-- ======= About Us Section ======= -->
+<section id="about" class="about section-bg p-0 m-0">
+  <style>
+    .hero-image {
+      position: relative;
+      height: 90vh;
+      width: 100%;
+      background-image: url('https://via.placeholder.com/1920x800'); /* Replace with actual group photo */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-text-box {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 2rem 3rem;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .hero-text-box h1 {
+      font-size: 2.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-text-box p {
+      font-size: 1.25rem;
+      margin: 0;
+    }
+
+    .about-content {
+      background-color: #f8f9fa;
+      padding: 60px 20px;
+    }
+
+    .section-title h2 {
+      font-size: 2.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .section-title p {
+      font-size: 1.1rem;
+      max-width: 850px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+  </style>
+
+  <!-- Full-width Hero Image -->
+  <div class="hero-image">
+    <div class="hero-text-box">
+      <h1>Placement Committee</h1>
+      <p>Connecting ambitions with opportunities</p>
+    </div>
+  </div>
+
+ 
+
+<section id="about" class="about section-bg py-5">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title text-center">
+      <h2>PLACEMENT COMMITTEE</h2>
+      <p>We are the Placement Committee at Ashoka University — connecting students with opportunity, ambition with mentorship, and vision with tangible outcomes.</p>
+    </div>
+
+     <!-- About Us Text Section -->
+  <div class="about-content container text-center" data-aos="fade-up">
+    <div class="section-title">
+      <h2>About Us</h2>
+      <p>The Placement Committee at Ashoka University serves as a link between students, recruiters, and the Career Development Office (CDO). As an organization, our mission is to encourage professional growth and enable career success for each student.</p>
+    </div>
+  </div>
+</section>
+
+
+    <div class="row gy-4">
+      <div class="col-lg-4 d-flex align-items-stretch">
+        <div class="card w-100 text-center shadow p-4">
+          <i class="bx bx-briefcase-alt-2 text-primary mb-3"></i>
+          <h4>Empower</h4>
+          <p>We prepare Ashokans for the future by facilitating access to internships, placements, and networking opportunities.</p>
         </div>
-
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Illustrator &amp; UI/UX Designer</h3>
-            <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 1 May 1995</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> www.example.com</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +123 456 7890</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>City:</strong> City : New York, USA</li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 30</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Master</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>PhEmailone:</strong> email@example.com</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li>
-                </ul>
-              </div>
-            </div>
-            <p>
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-            </p>
-          </div>
-        </div>
-
       </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      <div class="col-lg-4 d-flex align-items-stretch">
+        <div class="card w-100 text-center shadow p-4">
+          <i class="bx bx-network-chart text-success mb-3"></i>
+          <h4>Engage</h4>
+          <p>We actively engage with firms, recruiters, and alumni to build bridges between academia and industry.</p>
         </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">HTML <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">PHP <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Photoshop <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
       </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Facts Section ======= -->
-    <section id="facts" class="facts">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Facts</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      <div class="col-lg-4 d-flex align-items-stretch">
+        <div class="card w-100 text-center shadow p-4">
+          <i class="bx bx-bulb text-warning mb-3"></i>
+          <h4>Enable</h4>
+          <p>We strive to create a supportive ecosystem that enables every student to pursue their career goals confidently.</p>
         </div>
-
-        <div class="row counters">
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">232</span>
-            <p>Clients</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">521</span>
-            <p>Projects</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">1,463</span>
-            <p>Hours Of Support</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">15</span>
-            <p>Hard Workers</p>
-          </div>
-
-        </div>
-
       </div>
-    </section><!-- End Facts Section -->
+    </div>
+  </div>
+</section>
 
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-      <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>Testimonials</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+<section id="team" class="team section-bg">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Team</h2>
+      <p><span>Our Hardworking</span> <span style="color: #007bff;">Team</span></p>
+    </div>
+
+    <div class="row flex-nowrap overflow-auto px-2" style="white-space: nowrap;" data-aos="fade-up" data-aos-delay="100">
+
+      <!-- Member 1 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Anshika Chaudhry">
+          <div class="member-info">
+            <h6>Anshika Chaudhry</h6>
+            <span>President</span>
+            <p>anshika.chaudhry_ug25@ashoka.edu.in</p>
+          </div>
         </div>
-
-        <div class="owl-carousel testimonials-carousel">
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-        </div>
-
       </div>
-    </section><!-- End Testimonials Section -->
 
+      <!-- Member 2 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Fiona Arora">
+          <div class="member-info">
+            <h6>Fiona Arora</h6>
+            <span>Vice President</span>
+            <p>fiona.arora_ug24@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 3 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Mohin Viraj Gandhi">
+          <div class="member-info">
+            <h6>Mohin Viraj Gandhi</h6>
+            <span>Vice President</span>
+            <p>mohin.gandhi_ug25@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 4 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Shravika Nayar">
+          <div class="member-info">
+            <h6>Ananya Karel</h6>
+            <span>Head of Department, Human Resources and Career Prep Program</span>
+            <p>ananya.karel_ug25@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 4 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Shravika Nayar">
+          <div class="member-info">
+            <h6>Praneel Sati</h6>
+            <span>Head of Department, Human Resources and Career Prep Program</span>
+            <p>praneel.sati_ug25@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+       <!-- Member 4 -->
+       <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Shravika Nayar">
+          <div class="member-info">
+            <h6>Saransh Goel</h6>
+            <span>Head of Department, Projects and Collaborations</span>
+            <p>saransh.goel_ug25@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+      
+       <!-- Member 4 -->
+       <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Shravika Nayar">
+          <div class="member-info">
+            <h6>Ibrahim Khalil</h6>
+            <span>Head of Department, Projects and Collaborations</span>
+            <p>ibrahim.khalil_ug25@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+      
+      
+       <!-- Member 4 -->
+       <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Shravika Nayar">
+          <div class="member-info">
+            <h6>Amishi Gupta</h6>
+            <span>Head of Department, Outreach and Communications (Postgraduate)</span>
+            <p>amishi.gupta_ug25@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+      
+      
+      
+       <!-- Member 4 -->
+       <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Shravika Nayar">
+          <div class="member-info">
+            <h6>Ridhima Narula</h6>
+            <span>Head of Department, Outreach and Communications (Postgraduate)</span>
+            <p>ridhima.narula_ug25@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+           
+       <!-- Member 4 -->
+       <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Shravika Nayar">
+          <div class="member-info">
+            <h6>Devansh Gupta</h6>
+            <span>Head of Department, Outreach and Communications (Undergraduate)</span>
+            <p>devansh.gupta_ug2023@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+                 
+       <!-- Member 4 -->
+       <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Shravika Nayar">
+          <div class="member-info">
+            <h6>Vedant Deshmukh</h6>
+            <span>Head of Department, Outreach and Communications (Undergraduate)</span>
+            <p>vedant.deshmukh_ug25@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+      
+                 
+       <!-- Member 4 -->
+       <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Shravika Nayar">
+          <div class="member-info">
+            <h6>Alaana Aggarwal</h6>
+            <span>Head of Department, Social Media, Marketing, and Content Creation</span>
+            <p>alaana.aggarwal_ug2023@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+
+      
+      
+                 
+       <!-- Member 4 -->
+       <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Shravika Nayar">
+          <div class="member-info">
+            <h6>Manya Durga</h6>
+            <span>Head of Department, Social Media, Marketing, and Content Creation</span>
+            <p>manya.durga_ug2023@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+      
+      
+      
+                 
+       <!-- Member 4 -->
+       <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Shravika Nayar">
+          <div class="member-info">
+            <h6>Krishiv Jain</h6>
+            <span>Head of Department, Strategy and Operations</span>
+            <p>krishiv.jain_ug2023@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+
+           
+                 
+       <!-- Member 4 -->
+       <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Shravika Nayar">
+          <div class="member-info">
+            <h6>Nandini Agarwal</h6>
+            <span>Head of Department, Strategy and Operations</span>
+            <p>nandini.agarwal_ug25@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+
+    
+
+
+
+
+
+      <!-- Add more members here as needed -->
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Add rest of your members in the same way, adjusting `data-aos-delay` progressively -->
+
+    </div>
+  </div>
+</section><!-- /Team Section -->
+
+   
+   
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
