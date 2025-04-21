@@ -2,10 +2,40 @@
 <html lang="en">
 
 <style>
+/* Prevent any unwanted horizontal scroll */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+
+
+/* Ensure all sections respect screen width */
+.container, .container-fluid, .row {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+  
+  /* Global page fix: prevent horizontal scroll */
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Team Member Card */
   .team-member {
     width: 230px;
-    height: 320px;
-    background-color: rgba(255, 255, 255, 0.05);
+    height: 345px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: black;
     border-radius: 1rem;
     padding: 1rem 0.5rem;
     margin-right: 1rem;
@@ -32,34 +62,48 @@
     margin-bottom: 0.5rem;
   }
 
+  .member-img {
+    flex: 0 0 55%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .member-info {
+    flex: 0 0 45%;
+    width: 100%;
+    padding: 0 5px;
+    color: black;
+  }
+
   .member-info h6 {
-    color: #ffffff;
+    color: black;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: bold;
     margin-bottom: 0.2rem;
     line-height: 1.2;
+    white-space: normal;
+    word-wrap: break-word;
   }
 
-  .member-info span {
-    color: #cccccc;
+  .member-info span,
+  .member-info .text-muted,
+  .member-info .small,
+  .member-info p {
+    color: #333;
     font-size: 0.85rem;
     line-height: 1.1;
-    margin-bottom: 0.2rem;
-    display: block;
-  }
-
-  .member-info p {
-    color: #dddddd;
-    font-size: 0.75rem;
-    line-height: 1.1;
     word-break: break-word;
-    margin: 0;
+    margin: 0.2rem 0;
   }
 
   @media screen and (max-width: 768px) {
     .team-member {
-      width: 200px;
-      height: 300px;
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin: 0 auto 1rem auto;
     }
 
     .team-member img {
@@ -73,60 +117,12 @@
 
     .member-info span,
     .member-info p {
-      font-size: 0.72rem;
+      font-size: 0.75rem;
     }
   }
-
-  
 </style>
 
-<style>
-  .team-member {
-    overflow: hidden;
-  }
 
-  .member-info h6,
-  .member-info div {
-    white-space: normal !important;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-  }
-
-  .member-info {
-    width: 100%;
-    padding: 0 5px;
-  }
-</style>
-<!-- Placement Committee Members -->
-
-<style>
-  .team-member {
-    height: 345px !important;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: black;
-  }
-  .member-img {
-    flex: 0 0 55% !important;
-  }
-  .member-info {
-    flex: 0 0 45% !important;
-    color: black !important;
-  }
-  .member-info h6 {
-    color: black !important;
-    font-weight: bold;
-  }
-  .member-info .text-muted,
-  .member-info .small {
-    color: #333 !important;
-    font-size: 0.85rem;
-    word-wrap: break-word;
-  }
-</style>
-
-</style>
-
-</style>
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -174,7 +170,7 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li class="active"><a href="about.html">PROJECTS AND INITIATIVES</a></li>
+          <li class="active"><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
@@ -194,50 +190,159 @@
   </header><!-- End Header -->
 
   <main id="main">
+<!-- ======= Embedded CSS Styling ======= -->
+<style>
+  .section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .section-title p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  .card {
+    border: none;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    background-color: #fff;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  .card i {
+    font-size: 48px;
+  }
+  .member {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  .member:hover {
+    transform: translateY(-5px);
+  }
+  .member img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+</style>
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
+<!-- ======= About Us Section ======= -->
 
-        <div class="section-title">
-          <h2>About</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
 
-     <!-- About Us Text Section -->
-  <div class="about-content container text-center" data-aos="fade-up">
-    <div class="section-title">
-      <h2>About Us</h2>
-      <p>The Placement Committee at Ashoka University serves as a link between students, recruiters, and the Career Development Office (CDO). As an organization, our mission is to encourage professional growth and enable career success for each student.</p>
+
+    
+<!-- ======= About Us Section ======= -->
+<!-- ======= About Us Hero Section ======= -->
+<section class="about-hero p-0 m-0">
+  <style>
+    .about-hero-image {
+      position: relative;
+      height: 90vh;
+      width: 100%;
+      background-image: url('assets/img/1.png');
+      background-color: #e7f8f6;  /* Fallback color */
+      background-size: contain;  /* Scales image to fit inside container */
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+    .about-hero-text {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #e7f8f6;
+      padding: 2rem 3rem;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .about-hero-text h1 {
+      font-size: 2.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .about-hero-text p {
+      font-size: 1.25rem;
+      margin: 0;
+    }
+
+    .about-content {
+      background-color: #f8f9fa;
+      padding: 60px 20px;
+    }
+
+    .section-title h2 {
+      font-size: 2.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .section-title p {
+      font-size: 1.1rem;
+      max-width: 850px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+  </style>
+
+  <!-- Hero Banner -->
+  <div class="about-hero-image">
+   
+  </div>
+</section>
+
+<!-- ======= About Us Content Section ======= -->
+<section class="about-details section-bg py-5">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title text-center">
+      <h2>PLACEMENT COMMITTEE</h2>
+      <p>We are the Placement Committee at Ashoka University — connecting students with opportunity, ambition with mentorship, and vision with tangible outcomes.</p>
+    </div>
+
+    <div class="about-content container text-center" data-aos="fade-up">
+      <div class="section-title">
+        <h2>About Us</h2>
+        <p>The Placement Committee at Ashoka University serves as a link between students, recruiters, and the Career Development Office (CDO). As an organization, our mission is to encourage professional growth and enable career success for each student.</p>
+      </div>
     </div>
   </div>
 </section>
 
 
-    <div class="row gy-4">
-      <div class="col-lg-4 d-flex align-items-stretch">
-        <div class="card w-100 text-center shadow p-4">
-          <i class="bx bx-briefcase-alt-2 text-primary mb-3"></i>
-          <h4>Empower</h4>
-          <p>We prepare Ashokans for the future by facilitating access to internships, placements, and networking opportunities.</p>
-        </div>
-      </div>
-      <div class="col-lg-4 d-flex align-items-stretch">
-        <div class="card w-100 text-center shadow p-4">
-          <i class="bx bx-network-chart text-success mb-3"></i>
-          <h4>Engage</h4>
-          <p>We actively engage with firms, recruiters, and alumni to build bridges between academia and industry.</p>
-        </div>
-      </div>
-      <div class="col-lg-4 d-flex align-items-stretch">
-        <div class="card w-100 text-center shadow p-4">
-          <i class="bx bx-bulb text-warning mb-3"></i>
-          <h4>Enable</h4>
-          <p>We strive to create a supportive ecosystem that enables every student to pursue their career goals confidently.</p>
-        </div>
-      </div>
+
+<div class="row gy-4 justify-content-center px-3">
+  <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+    <div class="card w-100 text-center shadow p-4">
+      <i class="bx bx-briefcase-alt-2 text-primary mb-3"></i>
+      <h4>Empower</h4>
+      <p>We prepare Ashokans for the future by facilitating access to internships, placements, and networking opportunities.</p>
     </div>
   </div>
+  <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+    <div class="card w-100 text-center shadow p-4">
+      <i class="bx bx-network-chart text-success mb-3"></i>
+      <h4>Engage</h4>
+      <p>We actively engage with firms, recruiters, and alumni to build bridges between academia and industry.</p>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+    <div class="card w-100 text-center shadow p-4">
+      <i class="bx bx-bulb text-warning mb-3"></i>
+      <h4>Enable</h4>
+      <p>We strive to create a supportive ecosystem that enables every student to pursue their career goals confidently.</p>
+    </div>
+  </div>
+</div>
+
 </section>
 
 
