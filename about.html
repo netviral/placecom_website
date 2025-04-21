@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+  .team-member {
+    width: 230px;
+    height: 320px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    padding: 1rem 0.5rem;
+    margin-right: 1rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .team-member:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  }
+
+  .team-member img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-bottom: 0.5rem;
+  }
+
+  .member-info h6 {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    line-height: 1.2;
+  }
+
+  .member-info span {
+    color: #cccccc;
+    font-size: 0.85rem;
+    line-height: 1.1;
+    margin-bottom: 0.2rem;
+    display: block;
+  }
+
+  .member-info p {
+    color: #dddddd;
+    font-size: 0.75rem;
+    line-height: 1.1;
+    word-break: break-word;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .team-member {
+      width: 200px;
+      height: 300px;
+    }
+
+    .team-member img {
+      width: 115px;
+      height: 115px;
+    }
+
+    .member-info h6 {
+      font-size: 0.95rem;
+    }
+
+    .member-info span,
+    .member-info p {
+      font-size: 0.72rem;
+    }
+  }
+
+  
+</style>
+
+<style>
+  .team-member {
+    overflow: hidden;
+  }
+
+  .member-info h6,
+  .member-info div {
+    white-space: normal !important;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .member-info {
+    width: 100%;
+    padding: 0 5px;
+  }
+</style>
+<!-- Placement Committee Members -->
+
+<style>
+  .team-member {
+    height: 345px !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: black;
+  }
+  .member-img {
+    flex: 0 0 55% !important;
+  }
+  .member-info {
+    flex: 0 0 45% !important;
+    color: black !important;
+  }
+  .member-info h6 {
+    color: black !important;
+    font-weight: bold;
+  }
+  .member-info .text-muted,
+  .member-info .small {
+    color: #333 !important;
+    font-size: 0.85rem;
+    word-wrap: break-word;
+  }
+</style>
+
+</style>
+
+</style>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>About - Kelly Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Kelly - v3.0.0
+  * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+
+      <h1 class="logo"><a href="index.html">PLACECOM</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="about.html">PROJECTS AND INITIATIVES</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <div class="header-social-links">
+        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+      </div>
+
+    </div>
+
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+     <!-- About Us Text Section -->
+  <div class="about-content container text-center" data-aos="fade-up">
+    <div class="section-title">
+      <h2>About Us</h2>
+      <p>The Placement Committee at Ashoka University serves as a link between students, recruiters, and the Career Development Office (CDO). As an organization, our mission is to encourage professional growth and enable career success for each student.</p>
+    </div>
+  </div>
+</section>
+
+
+    <div class="row gy-4">
+      <div class="col-lg-4 d-flex align-items-stretch">
+        <div class="card w-100 text-center shadow p-4">
+          <i class="bx bx-briefcase-alt-2 text-primary mb-3"></i>
+          <h4>Empower</h4>
+          <p>We prepare Ashokans for the future by facilitating access to internships, placements, and networking opportunities.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex align-items-stretch">
+        <div class="card w-100 text-center shadow p-4">
+          <i class="bx bx-network-chart text-success mb-3"></i>
+          <h4>Engage</h4>
+          <p>We actively engage with firms, recruiters, and alumni to build bridges between academia and industry.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex align-items-stretch">
+        <div class="card w-100 text-center shadow p-4">
+          <i class="bx bx-bulb text-warning mb-3"></i>
+          <h4>Enable</h4>
+          <p>We strive to create a supportive ecosystem that enables every student to pursue their career goals confidently.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="team" class="team section-bg">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Team</h2>
+      <p><span>Our Hardworking</span> <span style="color: #007bff;">Team</span></p>
+    </div>
+
+    <div class="row flex-nowrap overflow-auto px-2" style="white-space: nowrap;" data-aos="fade-up" data-aos-delay="100">
+
+      <!-- Member 1 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Anshika Chaudhry">
+          <div class="member-info">
+            <h6>Anshika Chaudhry</h6>
+            <span>President</span>
+            <p>anshika.chaudhry_ug25@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 2 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Fiona Arora">
+          <div class="member-info">
+            <h6>Fiona Arora</h6>
+            <span>Vice President</span>
+            <p>fiona.arora_ug24@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 3 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Mohin Viraj Gandhi">
+          <div class="member-info">
+            <h6>Mohin Viraj Gandhi</h6>
+            <span>Vice President</span>
+            <p>mohin.gandhi_ug25@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 4 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Shravika Nayar">
+          <div class="member-info">
+            <h6>Ananya Karel</h6>
+            <span>Head of Department, Human Resources and Career Prep Program</span>
+            <p>ananya.karel_ug25@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 4 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Shravika Nayar">
+          <div class="member-info">
+            <h6>Praneel Sati</h6>
+            <span>Head of Department, Human Resources and Career Prep Program</span>
+            <p>praneel.sati_ug25@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+       <!-- Member 4 -->
+       <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Shravika Nayar">
+          <div class="member-info">
+            <h6>Saransh Goel</h6>
+            <span>Head of Department, Projects and Collaborations</span>
+            <p>saransh.goel_ug25@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+      
+       <!-- Member 4 -->
+       <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Shravika Nayar">
+          <div class="member-info">
+            <h6>Ibrahim Khalil</h6>
+            <span>Head of Department, Projects and Collaborations</span>
+            <p>ibrahim.khalil_ug25@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+      
+      
+       <!-- Member 4 -->
+       <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Shravika Nayar">
+          <div class="member-info">
+            <h6>Amishi Gupta</h6>
+            <span>Head of Department, Outreach and Communications (Postgraduate)</span>
+            <p>amishi.gupta_ug25@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+      
+      
+      
+       <!-- Member 4 -->
+       <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Shravika Nayar">
+          <div class="member-info">
+            <h6>Ridhima Narula</h6>
+            <span>Head of Department, Outreach and Communications (Postgraduate)</span>
+            <p>ridhima.narula_ug25@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+           
+       <!-- Member 4 -->
+       <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Shravika Nayar">
+          <div class="member-info">
+            <h6>Devansh Gupta</h6>
+            <span>Head of Department, Outreach and Communications (Undergraduate)</span>
+            <p>devansh.gupta_ug2023@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+                 
+       <!-- Member 4 -->
+       <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Shravika Nayar">
+          <div class="member-info">
+            <h6>Vedant Deshmukh</h6>
+            <span>Head of Department, Outreach and Communications (Undergraduate)</span>
+            <p>vedant.deshmukh_ug25@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+      
+                 
+       <!-- Member 4 -->
+       <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Shravika Nayar">
+          <div class="member-info">
+            <h6>Alaana Aggarwal</h6>
+            <span>Head of Department, Social Media, Marketing, and Content Creation</span>
+            <p>alaana.aggarwal_ug2023@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+
+      
+      
+                 
+       <!-- Member 4 -->
+       <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Shravika Nayar">
+          <div class="member-info">
+            <h6>Manya Durga</h6>
+            <span>Head of Department, Social Media, Marketing, and Content Creation</span>
+            <p>manya.durga_ug2023@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+      
+      
+      
+                 
+       <!-- Member 4 -->
+       <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Shravika Nayar">
+          <div class="member-info">
+            <h6>Krishiv Jain</h6>
+            <span>Head of Department, Strategy and Operations</span>
+            <p>krishiv.jain_ug2023@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+
+           
+                 
+       <!-- Member 4 -->
+       <div class="col-lg-3 col-md-4 col-sm-6 d-inline-block me-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Shravika Nayar">
+          <div class="member-info">
+            <h6>Nandini Agarwal</h6>
+            <span>Head of Department, Strategy and Operations</span>
+            <p>nandini.agarwal_ug25@ashoka.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+
+    
+
+
+
+
+
+      <!-- Add more members here as needed -->
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Add rest of your members in the same way, adjusting `data-aos-delay` progressively -->
+
+    </div>
+  </div>
+</section><!-- /Team Section -->
+
+   
+   
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Kelly</span></strong>. All Rights Reserved
+      </div>
+      
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
