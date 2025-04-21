@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Contact - Kelly Bootstrap Template</title>
+  <title>Contact - Placement Committee</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -41,7 +41,7 @@
   <header id="header" class="fixed-top">
     <div class="container-fluid d-flex justify-content-between align-items-center">
 
-      <h1 class="logo"><a href="index.html">Kelly</a></h1>
+      <h1 class="logo"><a href="index.html">PlaceCom</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -75,12 +75,10 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Fill the contact form below to share any concerns, questions, or suggestions with us. In case you require urgent assistance, you can reach out on the given email / contact number.</p>
         </div>
 
-        <div>
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
-        </div>
+        
 
         <div class="row mt-5">
 
@@ -89,19 +87,19 @@
               <div class="address">
                 <i class="icofont-google-map"></i>
                 <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>AC-02 115 (Near Subway), Ashoka University, 131029</p>
               </div>
 
               <div class="email">
                 <i class="icofont-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>connect.placecom@ashoka.edu.in</p>
               </div>
 
               <div class="phone">
                 <i class="icofont-phone"></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p>+91 96467 93555</p>
               </div>
 
             </div>
@@ -110,21 +108,53 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="https://formsubmit.co/ec1369eadaa63b2b74ba63918c6a29ae" method="POST" role="form" class="php-email-form">
+            <input type="hidden" name="_template" value="table">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                    data-rule="email" data-msg="Please enter a valid email" />
                   <div class="validate"></div>
                 </div>
               </div>
+            
+              <!-- Category Drop Down -->
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <label for="category">Category:</label>
+                <select class="form-control" name="category" id="category" required>
+                  <option value="" disabled selected>Select a category</option>
+                  <option value="Placement Process Queries">Placement Process Queries</option>
+                  <option value="Internship Process Queries">Internship Process Queries</option>
+                  <option value="Resources">Resources</option>
+                  <option value="Superset and Verification">Superset and Verification</option>
+                  <option value="Suggestions">Suggestions</option>
+                  <option value="Placement/ Internship Policy Guidance">Placement/ Internship Policy Guidance</option>
+                  <option value="Post-Offer Support">Post-Offer Support</option>
+                  <option value="Career Prep Program">Career Prep Program</option>
+                  <option value="Resume/Interview Support">Resume/Interview Support</option>
+                  <option value="Miscellaneous">Miscellaneous</option>
+                </select>
                 <div class="validate"></div>
               </div>
+            
+              <!-- Contact (Optional) -->
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="contact" id="contact" placeholder="Contact (Optional)" />
+                <div class="validate"></div>
+              </div>
+            
+              <!-- Subject -->
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                 <div class="validate"></div>
@@ -150,7 +180,7 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Kelly</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Placement Committee, Ashoka University</span></strong>. All Rights Reserved
       </div>
       
     </div>
